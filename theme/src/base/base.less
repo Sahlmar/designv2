@@ -1,0 +1,46 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+
+
+@bgColorHtml: #260C13;
+@bgColorBody: #fff;
+@colorBody: #333;
+@fontFamilyBody: serif;
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: @colorBody;
+    background-color: @bgColorBody;
+    font: 100.01%/1 @fontFamilyBody;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* **********************************************
+Structure the page
+********************************************** */
+.inner-wrap-main .row {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.wrap-sidebar {
+    padding: 30px;
+    max-width: 460px;
+}
+
+.region-main {
+    max-width: 768px;
+    margin: 0 auto;
+    overflow: auto;
+}

@@ -1,0 +1,271 @@
+/**
+* kmom02 - 2018-11-20
+* Layout style for general structure of header, navbar, main, footer
+* and other regions of the page including route specific styles.
+*/
+
+/**
+* Variables
+*/
+
+@colorH1: #4C1927;
+
+ @import url('https://fonts.googleapis.com/css?family=Exo:400,600|Montserrat:400');
+
+/**
+ * General layout
+ */
+.inner-wrap {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: 'Exo', sans-serif;
+    color: @colorH1;
+}
+
+h2 {
+    font-size: 1.6em;
+    font-family: 'Exo', sans-serif;
+}
+
+h3 {
+    font-size: 1.4em;
+    font-family: 'Exo', sans-serif;
+}
+
+h4 {
+    font-size: 1.1em;
+    font-family: 'Exo', sans-serif;
+}
+
+p {
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: #BF3F61;
+}
+
+/* **********************************************
+Region header
+********************************************** */
+
+.outer-wrap-header {
+    background-color: #4C1927;
+    overflow: auto;
+    height: 150px;
+    // .clearfix();
+    color: #BF3F61;
+}
+
+.inner-wrap-header {
+    max-width: 100%;
+}
+
+.region-header-col-1,
+.region-header-col-3 {
+    width: 20%;
+    float: left;
+}
+
+.region-header-col-2 {
+    width: 60%;
+    float: left;
+    text-align: center;
+}
+
+.site-logo-text {
+    font-size: 2em;
+}
+
+.site-logo-text a {
+    text-decoration: none;
+    color: #BF3F61;
+}
+
+.site-logo-text a:hover {
+    text-decoration: underline;
+}
+
+.site-logo-text-icon {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+/* Tar bort stora löv-loggan */
+.site-logo {
+    display: none;
+}
+
+.region-flash img {
+  width: 100%;
+}
+
+.inner-wrap-flash img {
+    max-width: 100%;
+}
+
+/* **********************************************
+NAVBAR
+********************************************** */
+.my-navbar {
+    margin-top: 12px;
+    list-style-type: none;
+}
+
+
+/* **********************************************
+Innehållet för text och content
+********************************************** */
+
+.region-main.has-sidebar {
+    display: inline;
+    float: left;
+    width: 65%;
+    overflow: auto;
+}
+
+.wrap-sidebar {
+    box-sizing: border-box;
+    padding-top: 3em;
+    width: 35%;
+    float: left;
+    display: inline;
+}
+
+.block {
+    margin-bottom: 3em;
+}
+
+/* **********************************************
+Flash message
+********************************************** */
+.flashmessage {
+    max-width: 600px;
+    margin: 15px auto;
+    padding: 10px;
+    background-color: #999;
+}
+
+.flashmessage .flashmessage-icon {
+    float: right;
+    font-size: 3em;
+    padding-right: .5em;
+}
+
+/* **********************************************
+Byline
+********************************************** */
+.author-byline {
+  overflow: auto;
+  box-shadow: 10px 10px 10px 7px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  margin-top: 50px;
+}
+
+.author-byline figure {
+   margin: 0 20px 0 0;
+}
+
+.author-byline h4 {
+    margin: 0;
+}
+
+/* **********************************************
+Innehåll-text
+********************************************** */
+
+ul.toc {
+    list-style-type: none;
+    padding-left: 0;
+    font-family: "Exo", sans-serif;
+    font-size: 1.1em;
+}
+
+ul.toc li a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul.toc li.section-header {
+    margin-top: 1.4em;
+    border-bottom: 1px solid #ccc;
+}
+
+ul.toc li a:hover {
+    text-decoration: underline;
+}
+/* **********************************************
+Previous Next
+********************************************** */
+.next-previous {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+/* **********************************************
+Breadcrumb
+********************************************** */
+
+.region-breadcrumb {
+    max-width: 100%;
+    padding: 15px 30px;
+}
+
+.breadcrumb-list ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.breadcrumb-list ul li {
+    margin-right: 10px;
+}
+
+/* **********************************************
+Footer
+********************************************** */
+
+.outer-wrap-footer {
+    background-color: #260C13;
+}
+
+.region-footer {
+    margin-top: 50px;
+    padding: 20px 10px;
+    background-color: #4C1927;
+    color: #fff;
+}
+
+.footer-column-wrapper {
+    display: flex;
+    max-width: 960px;
+    padding-bottom: 20px;
+    margin: 0 auto 30px;
+    border-bottom: solid #fff;
+}
+
+.footer-column-wrapper .footer-column {
+    margin: 0 20px;
+}
+
+.site-footer {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}

@@ -1,3 +1,4 @@
-#### Footer col 2
+#### Roligare löpning
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Dags att börja träna? Mitt tips är att börja med löpning med
+ [RunAcademy](https://runacademy.se)
