@@ -1,0 +1,27 @@
+.breadcrumb-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.breadcrumb-list ul li {
+    display: inline;
+}
+
+.breadcrumb-list ul li::after {
+    content: "/";
+    padding: 0 1.4em;
+}
+
+.breadcrumb-list ul li:last-child::after {
+    content: "";
+    padding: 0;
+}
+
+.breadcrumb-list ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.breadcrumb-list ul li a:hover {
+    text-decoration: underline;
+}

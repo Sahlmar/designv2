@@ -10,7 +10,6 @@
 
 [FIGURE src="image/byline-photo.jpg?w=100" class="left"]
 
-<h4>Marie Sahlén</h4>
-<p>Studerar webbprogrammering på Blekinge tekniska högskola.</p>
-<p>Ägnar fritiden åt löpning, tennis och vara i naturen.</p>
+<h5>Marie Sahlén</h5>
+<p>Studerar webbprogrammering på Blekinge tekniska högskola. Ägnar fritiden åt löpning, tennis och vara i naturen.</p>
 </div>
