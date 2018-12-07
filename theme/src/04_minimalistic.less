@@ -1,0 +1,118 @@
+@import "kmom04.less";
+@import url('https://fonts.googleapis.com/css?family=Assistant:200|Raleway:300');
+
+
+
+@backgroundColor: #2CBAE7;
+@textColor: white;
+@fontFamilyHeadings: Verdana, Geneva, sans-serif;
+@fontFamilyBody: 'Assistant', sans-serif;
+
+
+body {
+    background-color: @backgroundColor;
+    color: @textColor;
+    font-size: 1.15rem;
+    line-height: 1.8rem;
+}
+
+h1 {
+    border-bottom: none;
+}
+
+h4 {
+    border-bottom: none;
+}
+
+h5 {
+    margin-bottom: 21px;
+    border-bottom: none;
+}
+
+.row {
+    margin-bottom: 40px;
+}
+
+.region-footer a {
+    text-decoration: underline;
+    color: @textColor;
+
+}
+
+.block a {
+    text-decoration: underline;
+    color: @textColor;
+
+}
+
+/********************************
+header
+*********************************/
+
+.inner-wrap-header {
+    font-size: 1.0em;
+}
+
+.region-header-col-1,
+.region-header-col-2 {
+    float: left;
+    font-family: Verdana,sans-serif;
+}
+
+.site-logo-text {
+    // font-size: 1.4em;
+    color: @textColor;
+}
+
+.site-logo-text a {
+    text-decoration: none;
+    color: @textColor;
+}
+
+.site-logo-text a:hover {
+    text-decoration: underline;
+}
+
+.site-logo-text-icon {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.rm-desktop li {
+    background-color: @backgroundColor;
+}
+
+.rm-desktop a {
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+}
+
+/********************************
+toc
+*********************************/
+
+ul.toc li a {
+    color: @textColor;
+    text-decoration: none;
+}
+
+ul.toc li.section-header {
+    margin-top: 23px;
+    border-bottom: 1px solid @textColor;;
+    font-family: "Verdana", sans-serif;
+}
+
+ul.toc li a:hover {
+    text-decoration: underline;
+}
+
+.next a,
+.previous a {
+    color: @textColor;
+    text-decoration: none;
+}
+
+.breadcrumb-list ul li a {
+    color: @textColor;
+    text-decoration: none;
+}

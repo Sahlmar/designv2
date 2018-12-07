@@ -12,11 +12,19 @@
 /**
  * Navbar
  */
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1120px) {
     .rm-desktop a {
         padding-left: 0.5em;
         padding-right: 0.5em;
     }
+        .region-header-col-1,
+        .region-header-col-3 {
+            width: 15%;
+        }
+
+        .region-header-col-2 {
+            width: 70%;
+        }
 }
 
 // @media screen and (max-width: 800px) {
@@ -32,6 +40,33 @@
 
 @media screen and (max-width: 800px) {
     .rm-desktop {
+        font-size: 0.8em;
+    }
+    .region-header-col-1,
+    .region-header-col-3 {
+        width: 10%;
+    }
+
+    .region-header-col-2 {
+        width: 80%;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .rm-desktop {
+        display: none;
+    }
+    .rm-small {
+        display: block;
+    }
+
+    .footer-column {
+        float: none;
+        width: 100%;
+    }
+    .site-logo-text {
         display: none;
     }
 }

@@ -1,5 +1,5 @@
 /*!
- * Stylesheet for design kmom03.
+ * Stylesheet for design kmom04.
  *
  * This stylesheet is for the design course and kmom03 where we use LESS.
  */
@@ -4320,12 +4320,6 @@ template {
 /**
  * Fonts from Google.
  */
-@font-face {
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Kanit SemiBold'), local('Kanit-SemiBold'), url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr5KPxWnVaQ.ttf) format('truetype');
-}
 /**
  * Internal self contained modules, save in directory module/.
  */
@@ -4594,7 +4588,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
      */
 }
 .hgrid .inner-wrap {
-  background-image: url("../img/magic-number-24px.png");
+  background-image: url("../img/magic-number-22px.png");
 }
 /**
  * Base style to affect HTML elements on a general scale.
@@ -4604,14 +4598,13 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  */
 html {
   overflow-y: scroll;
-  background-color: #555152;
 }
 body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #C5A338;
-  font: 18px/1.33333333 Cambria, Georgia, Times, 'Times New Roman', serif;
+  background-color: #fff;
+  font: 18px/1.22222222 Garamond, serif;
 }
 img {
   max-width: 100%;
@@ -4622,9 +4615,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Kanit", sans-serif;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  font-family: Verdana, sans-serif;
+  margin-top: 22px;
+  margin-bottom: 22px;
 }
 h1 img,
 h2 img,
@@ -4636,10 +4629,10 @@ h6 img {
 }
 h1 {
   font-size: 2.375em;
-  line-height: 1.12280702;
+  line-height: 1.02923977;
   font-weight: normal;
   border-bottom: 1px solid #666;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
 }
 h1 ~ h1,
 h1 ~ h2,
@@ -4647,58 +4640,58 @@ h1 ~ h3,
 h1 ~ h4,
 h1 ~ h5,
 h1 ~ h6 {
-  margin-top: 48px;
+  margin-top: 44px;
 }
 h1 + h2 {
-  margin-top: 24px;
+  margin-top: 22px;
 }
 h2 {
   font-size: 1.875em;
-  line-height: 1.42222222;
+  line-height: 1.3037037;
   font-weight: normal;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
   border-bottom: 1px solid #CCC;
 }
 h2 + h3 {
-  margin-top: 24px;
+  margin-top: 22px;
 }
 h3 {
   font-size: 1.75em;
-  line-height: 1.52380952;
+  line-height: 1.3968254;
   font-weight: normal;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
   border-bottom: 1px solid #EEE;
 }
 h3 + h4 {
-  margin-top: 24px;
+  margin-top: 22px;
 }
 h4 {
   font-size: 1.5em;
-  line-height: 1.77777778;
+  line-height: 1.62962963;
   font-weight: normal;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
   border-bottom: 1px solid #EEE;
 }
 h4 + h5 {
-  margin-top: 24px;
+  margin-top: 22px;
 }
 h5 {
   font-size: 1.25em;
-  line-height: 1.06666667;
-  margin-bottom: 23px;
+  line-height: 1.95555556;
+  margin-bottom: 21px;
   border-bottom: 1px solid #EEE;
 }
 h5 + h6 {
-  margin-top: 24px;
+  margin-top: 22px;
 }
 h6 {
   font-size: 1.25em;
-  line-height: 1.06666667;
-  margin-bottom: 23px;
+  line-height: 1.95555556;
+  margin-bottom: 21px;
   border-bottom: 1px solid #EEE;
 }
 p {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 small,
 .small,
@@ -4739,7 +4732,7 @@ blockquote {
   border-left: 4px solid #eee;
   padding-left: 1em;
   margin-left: 0;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 pre,
 code,
@@ -4765,7 +4758,7 @@ pre code {
   white-space: pre;
 }
 pre {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 pre code {
   display: block;
@@ -4775,21 +4768,21 @@ div.code,
 pre code {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 23px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  margin-bottom: 21px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   padding-left: 0.5em;
   background-color: #eee;
 }
 ul,
 ol {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   padding-left: 1.5em;
 }
 ul p,
 ol p {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 11px;
+  margin-bottom: 11px;
 }
 ul ul,
 ol ul,
@@ -4804,7 +4797,7 @@ ol {
   list-style-type: decimal;
 }
 dl {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 dl.horizontal dt {
   clear: left;
@@ -4822,7 +4815,7 @@ article table,
 .table,
 .table1,
 .table2 {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 table.full-width,
 article .table,
@@ -4843,7 +4836,7 @@ article table caption,
 .table caption,
 .table2 caption {
   font-size: 0.875em;
-  line-height: 1.52380952;
+  line-height: 1.3968254;
   text-align: left;
   font-style: italic;
 }
@@ -4865,7 +4858,7 @@ article table th,
 article table td,
 .table td,
 .table2 td {
-  padding: 6px;
+  padding: 5.5px;
 }
 article table tr,
 .table tr,
@@ -4889,8 +4882,8 @@ hr {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  margin-top: 35px;
-  margin-bottom: 36px;
+  margin-top: 32px;
+  margin-bottom: 33px;
 }
 hr::after {
   content: "§";
@@ -5193,86 +5186,28 @@ hr::after {
   }
 }
 /**
- * Show off the regions used in the website, to ease styling.
- */
-.regions .outer-wrap {
-  background-color: #f4e3c9;
-  border: 1px solid #e3b774;
-}
-.regions .inner-wrap {
-  background-color: #f4e0e9;
-  border: 1px solid #d995b4;
-}
-.regions .region-header-col-1,
-.regions .region-header-col-2,
-.regions .region-header-col-3,
-.regions .region-flash,
-.regions .region-breadcrumb,
-.regions .region-flash-message,
-.regions .region-columns-above,
-.regions .region-main,
-.regions .region-after-main,
-.regions .region-columns-below,
-.regions .region-sidebar-left,
-.regions .region-sidebar-right,
-.regions .region-footer,
-.regions .region-footer-column-1,
-.regions .region-footer-column-2,
-.regions .region-footer-column-3 {
-  background-color: #b5dce1;
-  border: 1px solid #6cbac4;
-  color: #111;
-}
-/**
  * My own settings, not currently in their own module.
  */
 /**
  * Modules
  */
-.site-logo-text {
-  font-size: 2em;
+/* **********************************************
+Flash message
+********************************************** */
+.flashmessage {
+  max-width: 600px;
+  margin: 15px auto;
+  padding: 10px;
+  background-color: #999;
 }
-.site-logo-text a {
-  text-decoration: none;
+.flashmessage .flashmessage-icon {
+  float: right;
+  font-size: 3em;
+  padding-right: 0.5em;
 }
-.site-logo-text a:hover {
-  text-decoration: underline;
-}
-.site-logo-text-icon {
-  text-decoration: none;
-  font-size: 2rem;
-}
-a {
-  color: #4D3F18;
-}
-.rm-navbar {
-  font-size: 0.9em;
-  color: #4D3F18;
-}
-.rm-desktop li {
-  background-color: #D1B756;
-}
-.author-byline {
-  box-sizing: border-box;
-  box-shadow: 10px 10px 10px 7px rgba(0, 0, 0, 0.2);
-  height: 10em;
-  padding: 0.1em;
-}
-.author-byline img {
-  float: left;
-  margin: 2em;
-}
-.author-byline h5 {
-  margin: 0;
-  border-bottom: none;
-}
-.region-footer a {
-  color: #C5A338;
-}
-.outer-wrap-footer,
-.inner-wrap-footer {
-  color: #fff;
-  background-color: #555152;
+.inner-wrap-flash img {
+  max-width: 100%;
+  width: 100%;
 }
 ul.toc {
   list-style-type: none;
@@ -5323,4 +5258,63 @@ ul.toc li a:hover {
 }
 .breadcrumb-list ul li a:hover {
   text-decoration: underline;
+}
+.inner-wrap-header {
+  font-size: 1em;
+}
+.region-header-col-1,
+.region-header-col-2 {
+  float: left;
+  font-family: Verdana, sans-serif;
+}
+.site-logo-text {
+  color: #213e5a;
+}
+.site-logo-text a {
+  text-decoration: none;
+  color: #333;
+}
+.site-logo-text a:hover {
+  text-decoration: underline;
+}
+.site-logo-text-icon {
+  text-decoration: none;
+  font-size: 2rem;
+}
+.rm-desktop li {
+  background-color: #000;
+}
+.rm-desktop a {
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+}
+body {
+  background-color: #000;
+  color: #CDD6D5;
+}
+h1 {
+  border-bottom: none;
+  color: #415B76;
+}
+h4 {
+  border-bottom: none;
+  color: #415B76;
+}
+h5 {
+  font-size: 1.25em;
+  line-height: 1.95555556;
+  margin-bottom: 21px;
+  border-bottom: none;
+  color: #415B76;
+}
+.row {
+  margin-bottom: 40px;
+}
+.region-footer a {
+  text-decoration: underline;
+  color: #CDD6D5;
+}
+.block a {
+  text-decoration: underline;
+  color: #CDD6D5;
 }

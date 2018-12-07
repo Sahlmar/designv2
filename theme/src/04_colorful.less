@@ -1,0 +1,139 @@
+@import "kmom04.less";
+@import url('https://fonts.googleapis.com/css?family=Chivo:900');
+
+
+@backgroundColor: #6ec4c6;
+@textColor: #fff6bd;
+@fontFamilyHeadings: 'Chivo', sans-serif;
+@fontFamilyBody: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+body {
+    background-color: @backgroundColor;
+    color: @textColor;
+}
+
+h1 {
+    border-bottom: none;
+    background-color: #e6cca5;
+    color: #f395a5;
+    padding: 4px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h4 {
+    border-bottom: none;
+    background-color: #e6cca5;
+    color: #f395a5;
+    padding: 4px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h5 {
+    font-size: 1.25em;
+    line-height: 1.95555556;
+    margin-bottom: 21px;
+    border-bottom: none;
+    color: @textColor;
+}
+
+.row {
+    margin-bottom: 40px;
+}
+
+.region-footer a {
+    text-decoration: underline;
+    color: @textColor;
+
+}
+
+.block a {
+    text-decoration: underline;
+    color: @textColor;
+
+}
+
+/********************************
+header
+*********************************/
+.outer-wrap-header {
+    background-color: #f395a5;
+    border: 10px;
+    height: 110px;
+}
+
+.inner-wrap-header {
+    font-size: 1.0em;
+}
+
+.region-header-col-1,
+.region-header-col-2 {
+    float: left;
+    font-family: Verdana,sans-serif;
+}
+
+.site-logo-text {
+    // font-size: 1.4em;
+    color: #f395a5;
+}
+
+.site-logo-text a {
+    text-decoration: none;
+    color: #f395a5;
+}
+
+.site-logo-text a:hover {
+    text-decoration: underline;
+}
+
+.site-logo-text-icon {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.rm-desktop li {
+    background-color: @backgroundColor;
+}
+
+.rm-desktop a {
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    color: #31ffe0;
+}
+
+.rm-navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+/********************************
+toc
+*********************************/
+
+ul.toc li a {
+    color: @textColor;
+    text-decoration: none;
+}
+
+ul.toc li.section-header {
+    margin-top: 23px;
+    border-bottom: 1px solid @textColor;;
+    font-family: "Verdana", sans-serif;
+}
+
+ul.toc li a:hover {
+    text-decoration: underline;
+}
+
+.next a,
+.previous a {
+    color: @textColor;
+    text-decoration: none;
+}
+
+.breadcrumb-list ul li a {
+    color: @textColor;
+    text-decoration: none;
+}
