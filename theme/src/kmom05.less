@@ -1,0 +1,158 @@
+/*!
+ * Stylesheet for design kmom05.
+ *
+ * This stylesheet is for the design course and kmom05 where we use LESS.
+ */
+
+
+
+/**
+* Import mixins.
+*/
+// @import "mixin/clearfix.less";
+//
+// .clearfix() {
+//     #design-mixin.clearfix();
+// }
+
+/**
+ * Normalize and reset the style.
+ */
+@import "normalize.css/normalize.less";
+
+/**
+ * Font Awesome.
+ */
+
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+/**
+ * Fonts from Google.
+ */
+// @import url('https://fonts.googleapis.com/css?family=Kanit:600');
+
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+// @import "module/kmom01.less";
+// @import "module/stylechooser.less";  // Just an example module
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+// @import "@desinax/responsive-menu/less/media-queries.less";
+
+
+/**
+ * Import the typographic grid.
+ */
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+
+
+// Show the grid
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+/**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+@import "@desinax/figure/less/asciinema.less";
+@import "@desinax/figure/less/codepen.less";
+@import "@desinax/figure/less/figure.less";
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+    // #desinax-figure.figure(@maxWidth);
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen {
+    // &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
+//
+// body {
+//     max-width: @maxWidth;
+//     margin: 8px auto;
+//     background-color: #fff;
+// }
+//
+// html {
+//     background-color: #eee;
+// }
+//
+// @maxWidth: 800px;
+
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+// @import "base/base_default.less";
+@import "base/basekmom04.less"; //Ändrat för kmom04
+
+
+
+/**
+ * Import the vertical grid.
+ */
+@import "@desinax/vertical-grid/less/grid.less";
+@import "layout/vgrid.less";
+
+
+// Default grid, change to fit your requirements.
+// @columnWidth:   30;
+// @gutterWidth:   10;
+// @columns:       24;
+// @gridType:      "float"; // "flex"
+
+
+
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+// @import "layout/layout_default.less";
+// @import "layout/responsive_default.less";
+
+// @import "layout/layout.less"; // Ta bort temporärt?
+@import "layout/responsive.less";
+// @import "layout/regions.less";     // To add style for ?regions
+
+
+/**
+ * My own settings, not currently in their own module.
+ */
+
+ // Adapt the typographic grid to my style
+ // @fontFamilyHeadings: "Kanit", sans-serif;
+ // @fontFamilyHeadings:  @fontFamilyCambria;
+ // @fontFamilyBody:      @fontFamilyCambria;
+
+ // @fontFamilyBody:      @fontFamilyCalibri;
+ // @fontFamilyCode:      @fontFamilyCourier;
+
+ // Magic number and base fontsize
+ @magicNumber:  22px;  // 22px
+ @fontSizeBody: 18px;
+
+ /**
+ * Modules
+ */
+
+@import "module/flashmessage.less";
+@import "module/flash.less";
+@import "module/header.less";
+@import "module/byline.less";
+@import "module/toc.less";
+@import "module/breadcrumb.less";

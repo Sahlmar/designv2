@@ -22,7 +22,8 @@ return [
                 // "css/dbwebb-se.min.css",
                 // "css/kmom01.css",
                 // "css/kmom02.min.css",
-                "css/04_colorful.min.css",
+                // "css/04_colorful.min.css",
+                "css/kmom05.min.css"
 
             ],
             "javascripts" => [
