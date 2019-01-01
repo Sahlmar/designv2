@@ -1,0 +1,227 @@
+/*!
+ * Stylesheet for design kmom06.
+ *
+ * This stylesheet is for the design course and kmom06 where we use LESS.
+ */
+
+@import "kmom05.less";
+@import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro|Vollkorn:600");
+@import url('https://fonts.googleapis.com/css?family=Assistant:200|Raleway:300');
+
+
+
+@backgroundColor: #A7CA94;
+@bgColorHtml: #3B7447;
+@textColor: #fff;
+@fontFamilyHeadings: 'Vollkorn', serif;
+@fontFamilyBody: 'Assistant', sans-serif;
+
+html {
+    background-color: @bgColorHtml;
+}
+
+body {
+    background-color: @backgroundColor;
+    color: @textColor;
+    font-size: 1.15rem;
+    line-height: 1.8rem;
+}
+
+h1 {
+    border-bottom: none;
+    animation-name: rubrik;
+    animation-duration: 7s;
+}
+
+@keyframes rubrik {
+  from {background-color: #3B7447;}
+  to {background-color: #A7CA94;}
+}
+
+
+h4 {
+    // border-bottom: none;
+    color: white;
+}
+
+h5 {
+    margin-bottom: 21px;
+    // border-bottom: none;
+}
+
+.row {
+    margin-bottom: 70px;
+}
+
+.region-footer {
+    margin-top: 50px;
+    padding: 20px 10px;
+    color: #fff;
+}
+
+.region-footer a {
+    text-decoration: underline;
+}
+
+.site-footer {
+    text-align: center;
+    color: white;
+}
+
+.outer-wrap-footer,
+.inner-wrap-footer {
+    background-color: #3B7447;
+    padding-bottom: 50px;
+}
+
+.block a {
+    text-decoration: underline;
+    color: @textColor;
+}
+
+img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.right {
+    border: 15px solid #fff;
+    background: #fff;
+    color: @bgColorHtml;
+}
+
+
+
+
+
+/********************************
+header
+*********************************/
+
+.inner-wrap-header {
+    font-size: 1.0em;
+}
+
+.region-header-col-1,
+.region-header-col-2 {
+    float: left;
+    font-family: Verdana,sans-serif;
+}
+
+.site-logo-text {
+    // font-size: 1.4em;
+    color: @textColor;
+}
+
+.site-logo-text a {
+    text-decoration: none;
+    color: @textColor;
+}
+
+.site-logo-text a:hover {
+    text-decoration: underline;
+}
+
+.site-logo-text-icon {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.rm-desktop li {
+    background-color: @backgroundColor;
+}
+
+.rm-desktop a {
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+}
+
+.author-byline {
+    box-sizing: border-box;
+    box-shadow: none;
+    height: 10em;
+    padding: 0.1em;
+    background: rgba(58, 115, 70, 0.4);
+}
+
+/* **********************************************
+NAVBAR
+********************************************** */
+.rm-default a {
+    display: block;
+    text-decoration: none;
+    // white-space: nowrap;
+    padding: 0.1em;
+    // outline: 0;
+    margin-top: 15px;
+}
+
+.my-navbar ul li {
+  display: inline-block;
+}
+
+.my-navbar li a {
+  display: block;
+  text-decoration: none;
+  color: #3B7447;
+  // font-weight: 800;
+  text-transform: uppercase;
+  animation-duration: 2s;
+  animation-name: bounceIn;
+  // margin: 0 10px;
+}
+
+.my-navbar li a,
+.my-navbar li a:after,
+.my-navbar li a:before {
+  transition: all 1s;
+}
+
+.my-navbar li a:hover {
+    color: #fff;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/********************************
+toc
+*********************************/
+
+ul.toc li a {
+    color: @textColor;
+    text-decoration: none;
+}
+
+ul.toc li.section-header {
+    margin-top: 23px;
+    border-bottom: 1px solid @textColor;;
+    font-family: "Verdana", sans-serif;
+}
+
+ul.toc li a:hover {
+    text-decoration: underline;
+}
+
+.next a,
+.previous a {
+    color: @textColor;
+    text-decoration: none;
+}
+
+.breadcrumb-list ul li a {
+    color: @textColor;
+    text-decoration: none;
+}

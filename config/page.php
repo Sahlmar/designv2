@@ -23,7 +23,8 @@ return [
                 // "css/kmom01.css",
                 // "css/kmom02.min.css",
                 // "css/04_colorful.min.css",
-                "css/kmom05.min.css"
+                // "css/kmom05.min.css"
+                   "css/kmom06-designprinciper.min.css"
 
             ],
             "javascripts" => [

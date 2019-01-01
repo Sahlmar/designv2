@@ -1,0 +1,152 @@
+/*!
+ * Stylesheet for design kmom06.
+ *
+ * This stylesheet is for the design course and kmom06 where we use LESS.
+ */
+
+@import "kmom05.less";
+@import url('https://fonts.googleapis.com/css?family=Assistant:200|Raleway:300');
+@import url('https://fonts.googleapis.com/css?family=Chivo:900');
+
+
+
+@backgroundColor: #D3D4D4;
+@bgColorHtml: #BDBEBE;
+@textColor: #212529;
+@fontFamilyHeadings: 'Chivo', sans-serif;
+@fontFamilyBody: 'Assistant', sans-serif;
+
+html {
+    background-color: @bgColorHtml;
+}
+
+body {
+    background-color: @backgroundColor;
+    color: @textColor;
+    font-size: 1.15rem;
+    line-height: 1.8rem;
+}
+
+h1 {
+    border-bottom: none;
+    text-transform: uppercase;
+
+}
+
+h4 {
+    border-bottom: none;
+    text-transform: uppercase;
+
+}
+
+h5 {
+    margin-bottom: 21px;
+    border-bottom: none;
+    text-transform: uppercase;
+
+}
+
+.row {
+    margin-bottom: 70px;
+    box-shadow: 10px 10px 10px 1px rgba(0,0,0,.2);
+}
+
+.region-footer a {
+    text-decoration: underline;
+    color: @textColor;
+}
+
+.site-footer {
+    text-align: center;
+}
+
+.outer-wrap-footer,
+.inner-wrap-footer {
+    // background-color: #555152;
+    background-image: linear-gradient(#D3D4D4, #BDBEBE);
+
+}
+
+.block a {
+    text-decoration: underline;
+    color: @textColor;
+}
+
+/********************************
+header
+*********************************/
+
+.inner-wrap-header {
+    font-size: 1.0em;
+}
+
+.region-header-col-1,
+.region-header-col-2 {
+    float: left;
+    font-family: Verdana,sans-serif;
+}
+
+.site-logo-text {
+    // font-size: 1.4em;
+    color: @textColor;
+}
+
+.site-logo-text a {
+    text-decoration: none;
+    color: @textColor;
+}
+
+.site-logo-text a:hover {
+    text-decoration: underline;
+}
+
+.site-logo-text-icon {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.rm-desktop li {
+    background-color: @backgroundColor;
+}
+
+.rm-desktop a {
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+}
+
+.author-byline {
+    box-sizing: border-box;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+    height: 10em;
+    padding: 0.1em;
+
+}
+/********************************
+toc
+*********************************/
+
+ul.toc li a {
+    color: @textColor;
+    text-decoration: none;
+}
+
+ul.toc li.section-header {
+    margin-top: 23px;
+    border-bottom: 1px solid @textColor;;
+    font-family: "Verdana", sans-serif;
+}
+
+ul.toc li a:hover {
+    text-decoration: underline;
+}
+
+.next a,
+.previous a {
+    color: @textColor;
+    text-decoration: none;
+}
+
+.breadcrumb-list ul li a {
+    color: @textColor;
+    text-decoration: none;
+}
